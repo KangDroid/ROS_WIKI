@@ -8,7 +8,7 @@ Basic Information
   Ubuntu: Windows Subsystem for Linux <b>Version 2</b>, Ubuntu 18.04
 - Assuming reader knows how to use Ubuntu(linux) BASH Term.
 
-Ubuntu Basic Setup
+Ubuntu: Basic Setup
 ------------------
 We need to change ubuntu APT Source server<br>
 Open VIM Editor by below command;
@@ -23,6 +23,24 @@ Save it, and hop out of VIM by executing :w, :q.<br><br>
 Update source cache and repository / Upgrade system package by:
 ```
 $ sudo apt-get update && sudo apt-get upgrade
+```
+
+Ubuntu: X-Server Setup
+----------------------
+Execute following command:
+```
+$ export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+$ export LIBGL_ALWAYS_INDIRECT=0
+```
+Above command will choose what X Display to use. And fix RQT/RVIZ program not to use hardware-gpu.<br>
+Make sure you have configured "-ac" option on HOST vcxsrv server. "-ac" will configure allowing public-access.<br>
+And, after that, execute the following - installing basic x apps.
+```
+$ sudo apt-get install x11-apps xfonts-base xfonts-100dpi xfonts-75dpi xfonts-cyrillic
+```
+After executing above command, you can test x-display comming out by:
+```
+$ xeyes
 ```
 
 ROS1 Setup
