@@ -5,7 +5,8 @@ Basic Information
 -----------------
 - Main OS Information:<br>
   Windows: Microsoft Windows [Version 10.0.19041.21] (Windows 10 Insider Preview SLOW Ring), XLaunch Installed
-  Ubuntu: Windows Subsystem for Linux <b>Version 2</b>, Ubuntu 18.04
+  Ubuntu: Windows Subsystem for Linux <b>Version 2</b>, Ubuntu 18.04 <br>
+  - Native Ubuntu 18.04 will work. You might want to skip X-Server setup if you are using native version of Ubuntu.
 - Assuming reader knows how to use Ubuntu(linux) BASH Term.
 
 Ubuntu: Basic Setup
@@ -25,7 +26,7 @@ Update source cache and repository / Upgrade system package by:
 $ sudo apt-get update && sudo apt-get upgrade
 ```
 
-Ubuntu: X-Server Setup
+Ubuntu: X-Server Setup(Only if you are using WSL2)
 ----------------------
 Execute following command:
 ```
