@@ -3,7 +3,9 @@ ROS1 Host-Side Environment Setup Procedure
 
 Basic Information
 -----------------
-- Main OS: Windows 10 Home with Insider Preview(Slow Ring), build 10.0.18363.592, with WSL2(Ubuntu 18.04, 19.05 build)
+- Main OS Information:<br>
+  Windows: Microsoft Windows [Version 10.0.19041.21] (Windows 10 Insider Preview SLOW Ring), XLaunch Installed
+  Ubuntu: Windows Subsystem for Linux Version 2, Ubuntu 18.04
 - Assuming reader knows how to use Ubuntu(linux) BASH Term.
 
 Ubuntu Basic Setup
