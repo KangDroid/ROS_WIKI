@@ -5,7 +5,7 @@ Basic Information
 -----------------
 - Main OS Information:<br>
   Windows: Microsoft Windows [Version 10.0.19041.21] (Windows 10 Insider Preview SLOW Ring), XLaunch Installed
-  Ubuntu: Windows Subsystem for Linux Version 2, Ubuntu 18.04
+  Ubuntu: Windows Subsystem for Linux <b>Version 2</b>, Ubuntu 18.04
 - Assuming reader knows how to use Ubuntu(linux) BASH Term.
 
 Ubuntu Basic Setup
